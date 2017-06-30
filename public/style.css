@@ -1,0 +1,50 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	background-color: rgb(200, 200, 200);
+}
+
+section {
+	height: 100%;
+	width: 50%;
+}
+
+#shared-code {
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 4px;
+	box-sizing: border-box;
+}
+
+#personal {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+#personal-code {
+	display: block;
+	margin: 4px;
+	box-sizing: border-box;
+	flex-grow: 1;
+}
+
+#execute {
+	padding: 4px;
+	font-family: monospace;
+}
+
+.CodeMirror {
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgb(222, 222, 222);
+
+}

@@ -23,7 +23,7 @@ console.log('hello world');
 
 console.log(name, version, window.present);
 
-const client = deepstream('localhost:6020').login();
+const client = deepstream(`${location.hostname}:6020`).login();
 const sync = client.record.getRecord('shared');
 
 const sharedElem = document.getElementById('shared-code');

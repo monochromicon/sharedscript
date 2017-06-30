@@ -1,0 +1,40 @@
+{
+ "name": "sharedscript",
+ "version": "1.0.0",
+ "description": "",
+ "private": true,
+ "main": "server.js",
+ "dependencies": {
+  "deepstream.io": "^2.3.6",
+  "deepstream.io-client-js": "^2.2.1",
+  "font-awesome": "^4.7.0",
+  "normalize.css": "^7.0.0"
+ },
+ "devDependencies": {
+  "ava": "^0.20.0",
+  "rollup": "^0.43.0",
+  "rollup-plugin-commonjs": "^8.0.2",
+  "rollup-plugin-git-version": "^0.2.1",
+  "rollup-plugin-json": "^2.3.0",
+  "rollup-plugin-node-builtins": "^2.1.2",
+  "rollup-plugin-node-globals": "^1.1.0",
+  "rollup-plugin-node-resolve": "^3.0.0",
+  "rollup-watch": "^4.0.0",
+  "xo": "^0.18.2"
+ },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node server.js",
+  "build": "rollup -c"
+ },
+ "xo": {
+  "rules": {
+   "capitalized-comments": "off",
+   "curly": [
+    "warn",
+    "multi"
+   ],
+   "valid-jsdoc": "warn"
+  }
+ }
+}
